@@ -1,0 +1,5 @@
+Flask>=3.0,<4
+requests>=2.31,<3
+python-dotenv>=1.0,<2
+# Production web server (Linux hosts such as Render / Railway). Not needed on Windows.
+gunicorn>=21.2,<24; sys_platform != "win32"
