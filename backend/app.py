@@ -328,7 +328,7 @@ if __name__ == "__main__":
     if not is_configured():
         log.warning("Not configured yet: copy .env.example to .env and fill in your key and model.")
     app.run(
-        host=os.getenv("HOST", "127.0.0.1"),
+        host=os.getenv("HOST", "0.0.0.0"),
         port=_int_env("PORT", 5000),
         debug=os.getenv("FLASK_DEBUG") == "1",
     )
